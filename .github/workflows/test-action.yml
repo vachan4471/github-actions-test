@@ -1,0 +1,16 @@
+name: Test GitHub Action
+
+on: [push]  # Runs the action when you push code
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: 21f3001091@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
+
+      - name: Display Current Date
+        run: date
